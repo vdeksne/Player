@@ -1,0 +1,305 @@
+@font-face {
+    font-family: 'MTGSans-Black';
+    src: url('../assets/fonts/MTGSans-Black.woff') format('woff');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MTGSans-Bold';
+    src: url('../assets/fonts/MTGSans-Bold.woff') format('woff');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MTGSans-Regular';
+    src: url('../assets/fonts/MTGSans-Regular.woff') format('woff');
+    font-style: normal;
+}
+
+body {
+    font-family: 'MTGSans-Regular', sans-serif;
+}
+:root {
+    --color-main: #0b3144;
+    --color-secondary: #fff;
+    --color-text: #ffffff;
+    --color-background: #fff;
+
+    --padding-base: 2rem;
+}
+html {
+    font-family: 'MTGSans-Regular', sans-serif;
+    font-weight: 300;
+}
+
+.heading {
+    font-size: 2.5rem;
+}
+.lead {
+    width: 40rem;
+    max-width: 100%;
+}
+.subheading {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.title {
+    color: #E88C74;
+}
+
+.my-custom-slider {
+    margin-top: 4rem;
+}
+.my-custom-slider .title {
+    margin: 1rem 0 .5rem;
+}
+
+.main-container {
+    display: flex;
+}
+
+.picture-top {
+    width: 69%;
+    margin-top:-17rem;
+    z-index: 100;
+}
+
+.txt-2 {
+    width: 31%;
+    text-align: right;
+    margin-right: 6rem;
+    font-size: 0.9rem;
+    color: #fff;
+    font-family: 'MTGSans-Regular';
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 2rem;
+}
+
+.txt-2 h3 {
+    font-family: 'MTGSans-Black';
+    margin: 2rem 0;
+}
+
+.bottom-logos {
+    display: flex;
+    justify-content: center;
+    z-index: 200;
+    position: relative;
+    margin-top: -7rem;
+    gap: 2rem;
+}
+
+
+.countdown-1 {
+    display: flex;
+    width: 20rem;
+    justify-content: space-around;
+}
+
+.countdown {
+    width: 90%;
+    text-align: left;
+    
+}
+.premiere {
+    font-size: 1.125rem;
+    font-size: 0.91856rem;
+    text-align: left;
+    /* align-items: center;
+    justify-content: flex-end; */
+    align-self: center;
+    margin-left: -7rem;
+    margin-bottom: 0.6rem;
+}
+
+.prem-elem {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+.one, .two {
+    flex: 1; /* Adjusts the flex-basis of each div to share the space equally */
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.one {
+
+    width: 15rem;
+    height: 2rem;
+    font-size: 2.16175rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
+    /* margin-right: -3rem; */
+}
+
+.one h3 {
+    font-size: 2.16175rem;
+    font-family: 'MTGSans-Regular';
+}
+
+.two {
+    /* background-color: green; */
+    width: 10rem;
+    height: 2rem;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
+    font-size: 1.125rem;
+}
+
+.logo img {
+    width: 26.625rem;
+    height: auto; 
+}
+
+.img-a img {
+    width: 8rem;
+}
+
+.img-b img {
+    width: 8rem;
+}
+
+.timer-mobile {
+    display: none;
+}
+
+@media (max-width: 480px) {
+
+    .header {
+        padding: 6.667vw 20vw;
+    }
+
+    .expander-video {
+        margin: 0 10vw;
+    }
+
+    .picture-top {
+        width: 70vw;
+        height: auto;
+    }
+
+    .picture-top img {
+        width: 70vw;
+        height: 90vw;
+        height: auto;
+    }
+
+    .logo img {
+        width: 52vw;
+        height: auto;
+    }
+
+    .logo p {
+        font-size: 3.333vw;
+    }
+
+    .two {
+        justify-content: flex-start;
+        /* font-size: 0.65063rem; */
+        font-size: 2.656vw;
+    }
+
+    #countdown {
+        font-size: 5vw;
+        font-family: 'MTGSans-Regular', sans-serif;
+      }
+
+    .one {
+        justify-content: flex-start;
+    }
+
+    .one h3 {
+        font-size: 5vw;
+    }
+    .timer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        overflow-x: hidden;
+        margin-top: 3vw;
+        margin-left: 1vw;
+        z-index: 400;
+    }
+
+    .timer-mobile {
+        /* display: block; */
+        /* width: 16rem; */
+        /* height: 3.5625rem; */
+        /* background-color: red; */
+        position: relative;
+        /* right: -11rem; */
+        display: flex;
+        justify-content: flex-end;
+        text-align: left;
+        margin-left: 60vw;
+        width: 30%;
+    
+    }
+
+    .timer-desktop {
+        
+        display: none;
+    }
+
+    .header .cta {
+        margin-top: 1rem;
+    }
+
+    .picture-top {
+        width: 100%;
+        width: 68.75vw;
+        height: 88.958vw;
+        margin-top: -40vw;
+    }
+    
+    .txt-2 {
+        width: 100%;
+        font-size: 2.667vw;
+        width: 66.667vw;
+        height: 25vw;
+        display: flex;
+        align-items: center;
+        
+        margin: 0 auto;
+        margin-top: -16.667vw;
+        z-index: 300;
+    }
+    .txt-2 p {
+        font-size: 2.667vw;
+        text-align: center;
+
+    }
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-logos {
+        display: flex;
+        justify-content: center;
+        z-index: 200;
+        position: relative;
+        margin-top: 46.667vw;
+        gap: 6.667vw;
+    }
+
+    .txt-2 h3 {
+        font-family: 'MTGSans-Black';
+        margin: 6.667vw 0;
+        font-size: 4vw;
+    }
+
+}
+
+@media (min-width: 481px) {
+    .heading {
+        font-size: 3rem;
+    }
+}
